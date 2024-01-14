@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="author" content="112081">
+	<title>Computer Science Portfolio</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Sora' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div class="topnav" id="topnav">
+		<a href="index.html" class="home">Home</a>
+		<a href="investigation.html" class="button">Investigation</a>
+		<a href="design.html" class="button">Design</a>
+		<a href="implementation.html" class="button">Implementation</a>
+		<a href="testing.html" class="button">Testing</a>
+		<a href="evaluation.html" class="button">Evaluation</a>
+		<a href="references.html" class="button">References</a>
+		<a href="instructions.html" class="button">Instructions</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    	<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	<br>
+	<h1>
+		Implementation
+	</h1>
+	<div class="main-div">
+		<p>
+			My project was written in Visual Studio Code. The report was written using replit as it allows me to visualize the website in real time and quickly make any changes necessary.
+		</p>
+		<p>
+			Initially I started by creating a simple pygame window. This was done by defining its size and creating a simple while loop which runs 60 times per second and inside it, all the logic is meant to be written. Afterwards I got to creating my main menu, initially I wanted it to just look nice and not function just yet. I got the code for a nice animated button from github and, with a few modifications, used that in my project as I liked the look and simplicity of it. I then positioned all the buttons and added a main menu text. I added functionality to the three main buttons. To go to the options or gamemode selection screens and the last one to quit the game. I then focused on getting the basics of a pong game made. I drew the paddles and the ball on the screen and then moved onto making them move and correctly interact with the rest of the game.
+		</p>
+		<p>
+			During the project I encountered many issues. One of these was the collision logic between the ball and the paddles. If the ball hit the paddle at a specific angle it would go inside it and get stuck bouncing back and forth in it. To fix this issue I added checks to see which way the ball is heading so that it couldn’t bounce on the inside wall of the paddle and if that happened it would just bounce off of the back wall of the paddle rather than the front and leave without any other issues. While this isn’t a perfect solution it works as the issue is quite hard to reproduce and happens very rarely.
+		</p>
+		<div class="img-div">
+				<img class="code" src="assets/code.JPG" alt="Code example, clearly something broke since you're seeing this text">
+		</div>
+		<p>
+			The code above demonstrates how I achieved the simulation part of my game. At the top we define the two global variables used by this function. We run the ball start function which starts off the ball in a random direction. Then we have all the game logic in a, while True, loop which loops over the code 60 times per second. Below that, there’s a check to see if the “quit” button was pressed which closes the window and a check for the “escape” key which firstly, writes the scores and offsets into a csv file to be analyzed later and then resets the two scores and brings us back into the gamemode selection menu. We then have a check to see if either of the scores are bigger than a given value (in this case it was 5) which again writes the two scores into a csv file, resets the 2 scores and restarts the game. This is done in order to automate the simulation so it doesn’t have to always be manned by someone. Below that we run out three functions necessary for the game to run: ball_animation and the two player AI’s. Lastly we draw all the objects on the screen in given positions, and set the display to update 60 times per second, aka making the game run at 60 FPS. 
+		</p>
+	</div>
+	<br>
+	<br>
+</body>
+	
+</html>

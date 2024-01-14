@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="author" content="112081">
+	<title>Computer Science Portfolio</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Sora' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div class="topnav" id="topnav">
+		<a href="index.html" class="home">Home</a>
+		<a href="investigation.html" class="button">Investigation</a>
+		<a href="design.html" class="button">Design</a>
+		<a href="implementation.html" class="button">Implementation</a>
+		<a href="testing.html" class="button">Testing</a>
+		<a href="evaluation.html" class="button">Evaluation</a>
+		<a href="references.html" class="button">References</a>
+		<a href="instructions.html" class="button">Instructions</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    		<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	<br>
+	<h1>
+		Investigation of the brief
+	</h1>
+	<div class="main-div">
+		<p>
+			There are many possible options to creating a model of a game. These can range from something as complex as football to basic card games like war, where two players pull a card from a deck and the higher card wins.
+		</p>
+		<p>
+			For my project I decided to focus on the English game: <a href="https://en.wikipedia.org/wiki/Table_tennis" target="_blank">Table Tennis</a>, more commonly known as “Ping Pong”. I chose it because it struck a nice balance between being able to make it, yet still being complex enough to make it a nice challenge for myself. The game consists of 2 to 4 players hitting a ball back and forth to each other across a table with a net using, originally wooden, now plastic, paddles. The aim of the game is to score more points than your opponent. Points are scored when the opponent fails to return the ball within the specified rules. Professional table tennis is very fast paced and requires quick reactions.
+		</p>
+		<p>
+			Of course it is very difficult to create such a game in python especially with my current knowledge and in a language not designed for game design. That’s why I plan on focusing more on a simple 2D representation of the basic logic of ping pong, bouncing a ball back and forth using 2 paddles, reminiscent of the classic 1972 arcade game, <a href="https://en.wikipedia.org/wiki/Pong" target="_blank">Pong</a>, developed by Allan Alcorn. Pong is regarded as one of the pioneers of the video game industry and is the game that popularized video games. It was originally released as an arcade game with a home release following in 1975 through “Sears”. 
+		</p>
+		<p>
+			I want to make the project using a python module named “pygame”. Pygame allows for the creation of a game window and the drawing of objects on it using only python. I also looked into using another module named “pyinstaller” which allows you to package your code into a simple executable. To meet the requirements I will make the game have 3 modes. Single player, where the player plays against the computer. Multiplayer, where two players can play against each other and lastly simulation, where two players with different settings play against each other. In each game mode after the game is concluded a csv file will be created with the result and time of the game and, in the case of the simulation mode, also the settings of both players. The game will also feature a difficulty setting where the player can select how challenging the computer will be in single player mode.
+		</p>
+	</div>
+	<br>
+	<br>
+</body>
+	
+</html>

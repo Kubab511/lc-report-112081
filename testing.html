@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="author" content="112081">
+	<title>Computer Science Portfolio</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Sora' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div class="topnav" id="topnav">
+		<a href="index.html" class="home">Home</a>
+		<a href="investigation.html" class="button">Investigation</a>
+		<a href="design.html" class="button">Design</a>
+		<a href="implementation.html" class="button">Implementation</a>
+		<a href="testing.html" class="button">Testing</a>
+		<a href="evaluation.html" class="button">Evaluation</a>
+		<a href="references.html" class="button">References</a>
+		<a href="instructions.html" class="button">Instructions</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	<br>
+	<h1>
+		Testing
+	</h1>
+	<div class="main-div">
+		<p>
+			I carried out simple tests at each step of my project in order to ensure that I wouldn’t have to go back and fix
+			half of my code at the end. The main tests were done once the whole project was completed to ensure the results
+			were aligned with my expectations. These included testing how the speed of the paddles and the ball affects
+			gameplay and ensuring all collisions/movement worked correctly.
+		</p>
+		<p>
+			After the project was completed I carried out detailed tests of the functionality of my code. This included
+			testing out how each button acts, how the AI works, whether collision logic works correctly and if the paddle
+			moves when it’s supposed to. Below is a test case table illustrating the tests I carried out.
+		</p>
+		<div class="img-div">
+			<img class="test-case" src="assets/test_case_table.JPG" alt="Test case table">
+		</div>
+		<p>
+			The graphs below represent testing done to see how the paddle’s speed affects the win-rate of the games. The right
+			paddle was kept at a constant speed of 8 and the left paddle was changed from a speed lower than the right
+			paddle’s to a speed that was higher than it. The results align with what I expected with the paddle of a lower
+			speed losing more games than winning, having a 50:50 result when both were the same.
+		</p>
+		<div class="img-div">
+			<img class="graph" src="assets/Figure_1.jpg" alt="Test case 1">
+			<img class="graph" src="assets/Figure_2.jpg" alt="Test case 2">
+		</div>
+		<p>
+			Based on these results I conducted another test with the left paddle’s speed higher than the ball’s speed and the
+			right paddle’s speed. I expected it to win more games than the opponent with the lower speed. After running the
+			simulation for the same number of games with the same variables kept except for the paddle speed the results
+			showed that I was right and the left paddle did indeed win more games than the right, slower paddle.
+		</p>
+		<div class="img-div">
+			<img class="graph" src="assets/Figure_3.jpg" alt="Test case 3">
+		</div>
+	</div>
+	<br>
+	<br>
+</body>
+
+</html>
